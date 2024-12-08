@@ -1,0 +1,167 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, skyBlue, LightYellow);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Container to hold all the boxes */
+.container {
+    width: 90%;
+    max-width: 600px; /* Maximum width for larger screens */
+    padding: 15px;
+    text-align: center;
+}
+
+/* Box styling - Shared between all boxes */
+.box {
+    color: rgb(24, 140, 24);
+    padding: 16px;
+    margin: 20px auto;
+    width: 100%;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Align text to the left */
+    font-size: 1rem;
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Box Hover effect for interactive feel */
+.box:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+/* Box 1 specific styles */
+.box1 {
+    border-left: 5px solid #24a19c;
+}
+
+/* Box 2 specific styles */
+.box2 {
+    border-left: 5px solid #ff6f61;
+}
+
+/* Box 3 specific styles */
+.box3 {
+    border-left: 5px solid #8e44ad;
+}
+
+/* Button styling */
+.btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Button hover effect */
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Hidden paragraph */
+.hidden {
+    display: none;
+}
+
+#p1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+#p2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+#p3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.para{
+    margin-top: 20px;
+
+}
+/* Responsive styling for tablets and smaller screens */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .box {
+        padding: 12px;
+        font-size: 0.95rem; /* Slightly smaller font */
+    }
+
+    .btn {
+        font-size: 0.95rem;
+        padding: 6px 12px;
+    }
+
+    .box1, .box2, .box3 {
+        margin-bottom: 15px; /* More spacing between boxes */
+    }
+}
+
+/* Responsive styling for mobile devices */
+@media (max-width: 480px) {
+    body {
+        padding: 10px; /* Adding padding for better layout on mobile */
+    }
+
+    .container {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .box {
+        width: 100%;
+        padding: 10px;
+        font-size: 0.9rem; /* Adjust text size for small screens */
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 5px 10px;
+        margin-right: -10px;
+    }
+
+    .box1, .box2, .box3 {
+        margin-bottom: 10px; /* Less margin between boxes on small screens */
+    }
+
+    /* Adjust margin on small screens */
+    .box {
+        margin-bottom: 15px;
+        padding: 20px;
+       
+    }
+    .para{
+        margin-top: 15px;
+        
+    }
+}
